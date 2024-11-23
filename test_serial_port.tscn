@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cptjk5m7mcv6b"]
+
+[ext_resource type="Script" path="res://test_serial_port.gd" id="1_uxq1p"]
+[ext_resource type="PackedScene" uid="uid://c3qaund1j4afk" path="res://serial_port_handler/serial_port_handler.tscn" id="2_2o050"]
+
+[node name="TestSerialPort" type="Node2D"]
+script = ExtResource("1_uxq1p")
+
+[node name="SerialPortHandler" parent="." instance=ExtResource("2_2o050")]
