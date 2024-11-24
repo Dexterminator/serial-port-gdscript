@@ -23,6 +23,10 @@ SerialPortHandler="*res://serial_port_handler/serial_port_handler.gd"
 
 project/assembly_name="serial-port-gdscript"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/MonoBuildToggler/plugin.cfg")
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
