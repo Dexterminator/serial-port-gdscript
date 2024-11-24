@@ -6,4 +6,4 @@ func _ready():
 	if data != "":
 		print("Received Data: ", data)
 
-	SerialPortHandler.write("in")
+	SerialPortHandler.write("test")
