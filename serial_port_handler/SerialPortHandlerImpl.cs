@@ -6,13 +6,11 @@ public partial class SerialPortHandlerImpl : Node2D
 {
 	private SerialPort serialPort;
 
-	// TODO: Make baud and port args, and add them from gdscript (can use build var to change values)
-	public void InitPort()
+	public void InitPort(int baudRate, string portName)
 	{
-		// serialPort = new SerialPort("/dev/cu.usbmodem101", 9600);
 		serialPort = new SerialPort();
-		serialPort.BaudRate = 9600;
-		serialPort.PortName = "/dev/cu.usbmodem101";
+		serialPort.BaudRate = baudRate;
+		serialPort.PortName = portName;
 		serialPort.Open();
 	}
 
@@ -37,7 +35,6 @@ public partial class SerialPortHandlerImpl : Node2D
 	{
 		if (serialPort.IsOpen)
 		{
-			GD.Print(serialPort.IsOpen);
 			try
 			{
 				serialPort.WriteLine(data);
