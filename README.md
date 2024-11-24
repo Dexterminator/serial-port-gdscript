@@ -12,4 +12,6 @@ Based on https://youtu.be/nOKno82_gd0?si=i7zCyCndsfXXC8QI
 ### Setup (summarized from video):
 1. Make sure there is a `your-project-name.csproj` file (should be auto created when you make a C# script)
 2. Install the System.IO.Ports .NET package: `dotnet add package System.IO.Ports --version 7.0.0`
-3. Activate the Mono Build Toggler plugin
+3. Build the project at least once
+4. Activate the Mono Build Toggler plugin
+5. Specify your port name and baud rate in `serial_port_handler.gd`
