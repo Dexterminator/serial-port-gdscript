@@ -15,6 +15,10 @@ run/main_scene="res://test_serial_port.tscn"
 config/features=PackedStringArray("4.3", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SerialPortHandler="*res://serial_port_handler/serial_port_handler.gd"
+
 [dotnet]
 
 project/assembly_name="serial-port-gdscript"
